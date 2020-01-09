@@ -82,6 +82,8 @@ header {
 .text1 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .image1 {
@@ -126,6 +128,8 @@ header {
 .text2 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .num3 {
@@ -147,6 +151,8 @@ header {
 .text3 {
     grid-column: 2 / 3;
     grid-row:3 / 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .image3 {
@@ -164,6 +170,8 @@ header {
 .text4 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .num4 {
@@ -206,5 +214,43 @@ header {
 .separator p {
     font-size: 28px;
     text-align: center;
+    font-family: 'PT Sans', sans;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1000px;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.footertext {
+    padding-right: 30px;
+}
+
+.footerimage {
+    background-image: url(../images/footer.jpg);
+    overflow: hidden;
+}
+
+.footerimage img {
+    height: 135%;
+    width: -50%;
+    object-fit: fill;
+    transform: translateX(-20%)
+}
+
+.footerheading {
+    font-size: 78px;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.footertext {
+    font-size: 32px;
+    margin: 0 auto;
     font-family: 'PT Sans', sans;
 }
