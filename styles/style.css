@@ -189,13 +189,13 @@
 
     #first {
         font-family: 'PT Serif', serif;
-        font-size: 94px;
-        padding-top:7%;
+        font-size: 64px;
+        padding-top:20%;
     }
 
     #second {
         font-family: 'PT Sans', sans;
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .break-paragraph {
@@ -205,7 +205,7 @@
     #break-text {
         font-family: 'PT Sans', sans;
         text-align: center;
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .grid-section {
@@ -214,6 +214,7 @@
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 400px 300px 300px 400px 400px 400px 400px 400px; */
         grid-gap: 30px;
     }
 
@@ -232,7 +233,7 @@
 
     .number p {
         font-family: 'PT Serif', serif;
-        font-size: 12em;
+        font-size: 10em;
         margin: 0 auto;
         top: -50%;
     }
@@ -244,7 +245,7 @@
 
     .text h2 {
         font-family: 'PT Serif', serif;
-        font-size: 42px;
+        font-size: 32px;
         text-transform: uppercase;
         padding-bottom: 20px;
         margin: 0 auto;
@@ -252,33 +253,31 @@
 
     .text p {
         font-family: 'PT Sans', sans;
-        font-size: 34px;
+        font-size: 20px;
         margin: auto;
     }
 
     footer {
-        display: grid;
         height: 1100px;
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 200px 800px 300px;
         widows: 100%;
         margin: 0 auto;
-        padding-top: 100px;
-        display: grid;
+        display:flex;
+        flex-direction: column;
     }
 
     .footer-image {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
+        order: 3;
     }
 
-    .footer-image img{
+    .footer-image img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     .footer-text {
+        order: 1;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -289,23 +288,24 @@
 
     .text h1 {
         font-family: 'PT Serif', serif;
-        font-size: 72px;
+        font-size: 52px;
         text-transform: uppercase;
         text-align: left;
+        margin: 50px 0 0 0 ;
     }
 
     .floating-paragraph {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
+        order: 2;
+        color: skyblue;
         text-align: center;
         text-transform: uppercase;
-        margin: 100px 0 0 0;
+        margin: 0;
         width: 100%;
         font-weight: 900;
-        font-size: 8rem;
+        font-size: 7rem;
         font-family: 'PT Sans', sans;
-        background: linear-gradient(to right, skyblue 50% , white 50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    }
+
+    .floating-paragraph p {
     }
 }
