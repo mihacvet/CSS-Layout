@@ -260,9 +260,6 @@
     footer {
         height: 1100px;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 800px 300px;
-        widows: 100%;
-        margin: 0 auto;
         display:flex;
         flex-direction: column;
     }
@@ -278,7 +275,6 @@
 
     .footer-text {
         order: 1;
-        margin: 0 auto;
         padding: 0 20px;
     }
 
