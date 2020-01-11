@@ -227,14 +227,19 @@
         grid-gap: 30px; */
     }
 
+    /* .element:nth-child(even) {
+        flex-direction: row-reverse;
+    } */
+
     .element {
-        flex: 1 2 45%;
+        flex: 1 0 45%;
         margin: 10px;
     }
-    
-    .image-3 {
-        height: 200px;
-    }
+
+    /* .element:nth-child(3) {
+        height: 300px;
+    } */
+
 
     .grid-section img {
         width: 100%;
