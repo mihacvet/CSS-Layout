@@ -86,7 +86,7 @@
 
     .text {
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .text h2 {
@@ -146,7 +146,7 @@
         grid-row: 2 / 3;
         text-align: center;
         text-transform: uppercase;
-        margin: 100px 0 0 0;
+        margin: 0;
         width: 100%;
         font-weight: 900;
         font-size: 8rem;
@@ -159,7 +159,7 @@
 
 /* --------------- MOBILE VERSION --------------- */
 
-@media (min-width: 400px) and (max-width: 800px)
+@media (min-width: 600px) and (max-width: 800px)
 {
     html {
         height: 100%;
@@ -168,7 +168,8 @@
 
     .wrapper {
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 800px;
+        min-width: 400px;
         align-items: center;
     }
 
@@ -213,12 +214,26 @@
 
     .grid-section {
         width: 90%;
-        overflow: hidden;
         margin: auto;
-        display: grid;
+        /* column-count: 2;
+        column-gap: 10px; */
+
+        display: flex;
+        flex-wrap: wrap;
+        
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 400px 300px 300px 400px 400px 400px 400px 400px; */
-        grid-gap: 30px;
+        grid-template-rows: 400px 300px 300px 400px 400px 400px 400px 400px;
+        grid-gap: 30px; */
+    }
+
+    .element {
+        flex: 1 2 45%;
+        margin: 10px;
+    }
+    
+    .image-3 {
+        height: 200px;
     }
 
     .grid-section img {
@@ -243,7 +258,7 @@
 
     .text {
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .text h2 {
@@ -264,9 +279,9 @@
 
     footer {
         height: 1100px;
-        grid-template-columns: 1fr;
         display:flex;
         flex-direction: column;
+        margin: 0 ;
     }
 
     .footer-image {
@@ -280,7 +295,7 @@
 
     .footer-text {
         order: 1;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
     .footer-text p {
@@ -305,5 +320,10 @@
         font-weight: 900;
         font-size: 7rem;
         font-family: 'PT Sans', sans;
+    }
+
+    .floating-paragraph p {
+        margin: 0;
+        padding: 0;
     }
 }
