@@ -400,7 +400,7 @@ html {
 
 #second {
     font-family: 'PT Sans', sans;
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 .break-paragraph {
@@ -410,7 +410,7 @@ html {
 #break-text {
     font-family: 'PT Sans', sans;
     text-align: center;
-    font-size: 2vh;
+    font-size: 4vw;
 }
 
 /* ***** MAIN SECTION ***** */
@@ -418,14 +418,6 @@ html {
 .grid-section {
     width: 100%;
     margin: auto;
-    /* column-count: 2;
-    column-gap: 10px; */
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 300px 300px 400px 400px 400px 400px 400px;
-    grid-gap: 30px; */
 }
 .element {
     width: 90%;
@@ -447,20 +439,9 @@ html {
     color: white;
 }
 
-/* .text-1 {height: 400px;}
-.text-2 {height: 500px;}
-.text-3 {height: 500px;}
-.text-4 {height: 300px;}
-
-.number-1{height: 400px;}
-.number-2{height: 600px;}
-.number-3{height: 500px;}
-.number-4{height: 400px;}
-
-.image-1 {height: 300px;}
-.image-2 {height: 400px;}
-.image-3 {height: 300px;} */
-
+.number p {
+    font-size: 16vh;
+}
 
 .text {
     text-align: center;
@@ -470,13 +451,13 @@ html {
 
 .text p {
     font-family: 'PT Sans', sans;
-    font-size: 2vh;
+    font-size: 4vw;
     margin: auto;
 }
 
 .text h2 {
     font-family: 'PT Serif', serif;
-    font-size: 3.5vw;
+    font-size: 4vw;
     text-transform: uppercase;
     padding: 10px;
     margin: 0;
@@ -502,7 +483,7 @@ footer {
 
 .footer-text {
     order: 1;
-    padding: 0 50px;
+    padding: 0;
 }
 
 .footer-text p {
@@ -516,6 +497,7 @@ footer {
     text-transform: uppercase;
     text-align: left;
     margin: 0;
+    padding: 20px 0;
 }
 
 .floating-paragraph {
@@ -526,13 +508,12 @@ footer {
     margin: 0;
     width: 100%;
     font-weight: 900;
-    font-size: 12vw;
+    font-size: 9vw;
     font-family: 'PT Sans', sans;
 }
 
 .floating-paragraph p {
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
 }
-
 }
